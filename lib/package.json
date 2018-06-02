@@ -1,11 +1,11 @@
 {
-  "name": "ts-eslint-config-ts-react",
+  "name": "eslint-config-ts-react",
   "version": "1.0.0",
   "description": "Technology Studio - Eslint config ts react",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:technology-studio/ts-eslint-config-ts-react.git"
+    "url": "git@bitbucket.org:technology-studio/eslint-config-ts-react.git"
   },
   "author": {
     "name": "Technology Studio",
@@ -21,10 +21,9 @@
     "republish": "npm unpublish $(cat package.json | jq -r '.name')@$(cat package.json | jq -r '.version') && yarn publish --new-version $(cat package.json | jq -r '.version')"
   },
   "dependencies": {
+    "eslint-config-standard": "^11.0.0"
   },
   "peerDependencies": {
-  },
-  "standard": {
-    "linter": "standardx"
+    "eslint-plugin-flowtype": ">=2.49.3"
   }
 }
