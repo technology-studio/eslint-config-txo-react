@@ -1,0 +1,57 @@
+{
+  "name": "ts-eslint-config-ts-react",
+  "version": "1.0.0",
+  "description": "Technology Studio - Eslint config ts react",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:technology-studio/ts-eslint-config-ts-react.git"
+  },
+  "author": {
+    "name": "Technology Studio",
+    "email": "npm@technologystudio.sk",
+    "url": "https://bitbucket.org/technology-studio/"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
+    "newclear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build && rm -rf node_modules/ && npm cache clean --force && npm i",
+    "test:watch": "jest --watch",
+    "updateSnapshot": "jest --updateSnapshot",
+    "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
+    "lint": "standardx --verbose | snazzy",
+    "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
+    "fixcode": "standardx --fix",
+    "precommit": "yarn run git-hook",
+    "prepush": "yarn run git-hook",
+    "git-hook": "yarn -s lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-preset-react-native": "^4.0.0",
+    "flow-bin": "^0.66.0",
+    "flow-typed": "^2.3.0",
+    "husky": "^0.14.3",
+    "ignite-ts-package-boilerplate": "^1.4.1",
+    "jest": "21.2.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "standardx": "^1.0.3"
+  },
+  "standard": {
+    "linter": "standardx",
+    "ignore": [
+      "/flow-typed/"
+    ]
+  },
+  "standardx": {
+    "ignore": [
+      "/flow-typed/"
+    ]
+  }
+}

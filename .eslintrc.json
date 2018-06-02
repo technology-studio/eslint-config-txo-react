@@ -1,0 +1,28 @@
+{
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"]
+  },
+  "globals": {
+    "describe": true,
+    "test": true,
+    "jest": true,
+    "expect": true,
+    "fetch": true,
+    "navigator": true,
+    "__DEV__": true,
+    "XMLHttpRequest": true,
+    "FormData": true,
+    "React$Element": true,
+    "Generator": true,
+    "$Keys": true,
+    "$Abstract": true,
+    "$Shape": true,
+    "$Values": true,
+    "Class": true,
+    "$Supertype": true,
+    "$Subtype": true,
+    "Position": true
+  }
+}
