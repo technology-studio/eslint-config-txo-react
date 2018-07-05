@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-ts-react",
-  "version": "1.0.0",
-  "description": "Technology Studio - Eslint config ts react",
+  "name": "eslint-config-tsx-react",
+  "version": "1.1.0",
+  "description": "Technology Studio - Eslint config react",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:technology-studio/eslint-config-ts-react.git"
+    "url": "git@bitbucket.org:technology-studio/eslint-config-tsx-react.git"
   },
   "author": {
     "name": "Technology Studio",
@@ -32,6 +32,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "husky": "^0.14.3"
   }
