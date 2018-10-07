@@ -1,22 +1,19 @@
 {
-  "name": "eslint-config-tsx-react",
+  "name": "eslint-config-txo-react",
   "version": "1.1.0",
   "description": "Technology Studio - Eslint config react",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:technology-studio/eslint-config-tsx-react.git"
+    "url": "git@github.com:technology-studio/eslint-config-txo-react.git"
   },
   "author": {
     "name": "Technology Studio",
     "email": "npm@technologystudio.sk",
-    "url": "https://bitbucket.org/technology-studio/"
+    "url": "https://github.com/technology-studio/"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.technologystudio.sk"
-  },
   "scripts": {
     "republish": "npm unpublish $(cat package.json | jq -r '.name')@$(cat package.json | jq -r '.version') && yarn publish --new-version $(cat package.json | jq -r '.version')"
   },
