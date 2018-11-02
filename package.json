@@ -17,9 +17,13 @@
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty . --fix",
-    "precommit": "yarn run git-hook",
-    "prepush": "yarn run git-hook",
     "git-hook": "yarn -s lint"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "yarn run git-hook",
+      "prepush": "yarn run git-hook"
+    }
   },
   "dependencies": {
     "eslint-config-standard": "^12.0.0"
