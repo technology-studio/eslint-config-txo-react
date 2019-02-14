@@ -45,3 +45,8 @@ export type NoDupeKeysOK = { a: number, b: number }
 
 // export type typeIdMatchError = {}
 export type TypeIdMatchOk = {}
+
+export type NoUselessComputedKeyOk = { 123: number }
+export type NoUselessComputedKeyOk2 = { [123]: number }
+export const noUselessComputedKeyOk = { 123: 1 }
+export const noUselessComputedKeyOk2 = { [123]: 1 }
